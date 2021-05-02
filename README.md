@@ -11,15 +11,15 @@ The agents have an assigned home spot in the residential/dormitories when they a
 
 An infected student can infect other students in their proximity, however, the probability of infection reduces by 80% if the infected student is wearing a mask.
 
-The reproductive number <img src="https://render.githubusercontent.com/render/math?math="R_0"> is calculated based on the formula:
+The reproductive number <img src="https://render.githubusercontent.com/render/math?math=R_0"> is calculated based on the formula:
 
-<img src="https://render.githubusercontent.com/render/math?math="R_0 = S\cdot L\cdot \beta">
+<img src="https://render.githubusercontent.com/render/math?math=R_0 = S\cdot L\cdot \beta">
 
 Here, S is the number of susceptible individuals encountered by an infected individual, beta is the trasmissibility, L is the length of infection. 
 
 The length of infection is assumed to be 7 days, with the transmissibility value depending on whether the infected are wearing masks. The probability of infection is modeled using the following formula
 
-<img src="https://render.githubusercontent.com/render/math?math="1 - (1 - 0.2 \beta) ^ {N_1} * (1 - \beta) ^ {N_2}"> N1, N2 are the number of mask wearers and non wearers, respectively.
+<img src="https://render.githubusercontent.com/render/math?math=1 - (1 - 0.2 \beta) ^ {N_1} * (1 - \beta) ^ {N_2}"> N1, N2 are the number of mask wearers and non wearers, respectively.
 
 Using the stay at home and quarantine policy options changes the weekday schedule as well as mobility of the agents. The infected agents stay put in case of quarantine.
 
